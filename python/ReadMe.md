@@ -53,7 +53,7 @@ In order to install, do the following:
 
 ## Limitations
 
-The output feature class (vertices, edges, cells) may not be exactly snapped to the input line feature class. The reason for that is that the underlying Boost API takes integer as an input. When the coordinates are sent to the voronoi API, they get rounded. There are different strategies we have implemented to fix that issues for customers, so feel free to contact us if some information is needed. One of the solution is to use snappping.
+The output feature class (vertices, edges, cells) may not be exactly snapped to the input line feature class. The reason for that is that the underlying Boost API takes integer as an input. When the coordinates are sent to the voronoi API, they get rounded. There are different strategies we have implemented to fix that issues depending on the level of license in ArcGIS Desktop. One of the solution is to use snappping.
 
 The results of this tool is highly depending on the quality of your input data. It is up to validate that your input data meet the following requirements:
 
