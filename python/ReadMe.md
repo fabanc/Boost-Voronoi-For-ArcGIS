@@ -1,4 +1,4 @@
-# Voronoying (Python)
+# Boost-Voronoi-For-ArcGIS (Python)
 
 ## Description
 
