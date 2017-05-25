@@ -4,7 +4,11 @@
 
 This section contains a geoprocessing tool. This tool will require the deployement of pyvoronoi 1.0.0. The documentation for installing pyvoronoi is available on project web page: https://github.com/Voxel8/pyvoronoi
 
-If you have internet access, the tool can be downloaded using the following command line: 
+For information about the voronoi solver, please refer to the Boost API: http://www.boost.org/doc/libs/1_59_0/libs/polygon/doc/voronoi_diagram.htm
+
+### ArcGIS Desktop
+
+I will try to use create wheels to create binary packages in the future. For now, if you have internet access, the tool can be downloaded using the following command line: 
 
 ``pip install pyvoronoi==1.0.0``
 
@@ -14,7 +18,24 @@ Note that you will need to download Microsoft Visual C++ Compiler for Python 2.7
 
 Consult the help of associated with the geoprocessing tools for more information. The pyovornoi github repository has also extensive documentation about installation. 
 
-Finally, for information about the voronoi solver, please refer to the Boost API: http://www.boost.org/doc/libs/1_59_0/libs/polygon/doc/voronoi_diagram.htm
+### ArcGIS Pro 1.3 and 1.4
+
+ArcGIS Pro comes with conda, which means the end-user does not need to deal with all the steps for ArcGIS Desktop installation.
+
+* Open a command line as admin and use the command: cd "C:\Program Files\ArcGIS\Pro\bin\Python\Scripts"
+
+* type: conda install anaconda-client
+
+* conda install -c fabanc pyvoronoi
+
+* Open your ArcGIS Pro Project
+
+* Click on the tab ``Project``
+
+* Click on ``Add Package`` and choose pyvoronoi
+
+* Check the list of installed package to see if pyvoronoi appears in the list.
+
 
 ## Installing Setup tools in Python.
 
