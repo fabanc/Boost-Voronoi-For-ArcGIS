@@ -6,4 +6,4 @@ This project provides a set of tools for generating voronoi diagrams based on li
 
 ## License
 
-The code is available under `MIT license <http://opensource.org/licenses/MIT>`__.
+The code is available under 'MIT license <http://opensource.org/licenses/MIT>'.
