@@ -8,13 +8,18 @@ For information about the voronoi solver, please refer to the Boost API: http://
 
 ### ArcGIS Desktop
 
-I will try to use create wheels to create binary packages in the future. For now, if you have internet access, the tool can be downloaded using the following command line: 
+The python package used by this extensions is built on C++ code, which can be unsettling for non-programmers as it requires installing a C++ compiler ([see here for details](https://wiki.python.org/moin/WindowsCompilers))
+Since ArcGIS Desktop uses Python 2.7 and works exclusively on Windows, I have attached the compile code packages in the directory pyvoronoi-wheels. In order to install from the wheels you can:
 
-``pip install pyvoronoi==1.0.0``
+* Double click on the exe file and install pyvoronoi in the python installation used by your ArcGIS environement.
 
-The adequate version of pypi can also be accessed through the project website: https://pypi.python.org/pypi?%3Aaction=pkg_edit&name=pyvoronoi
+* Open a command line in your python Scripts directory (by default: C:\Python27\ArcGIS10.3\Scripts) and yype the following in a command line: ``pip install pyvoronoi==1.0.3``
 
-Note that you will need to download Microsoft Visual C++ Compiler for Python 2.7: https://www.microsoft.com/en-ca/download/details.aspx?id=44266
+The wheels are built for 32 and 64 bits environements.
+
+If you already have a C++ compiler, are on a Linux OS, or are using another version than Python 2.7, you will need to install from Pypi.
+
+``pip install pyvoronoi==1.0.3``
 
 Consult the help of associated with the geoprocessing tools for more information. The pyovornoi github repository has also extensive documentation about installation. 
 
