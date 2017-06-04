@@ -112,14 +112,15 @@ def main():
         ##################################################################################
         # READ PARAMETERS
         ##################################################################################
-        inpoints = arcpy.GetParameterAsText(0)
-        inlines = arcpy.GetParameterAsText(1)
+        inlines = arcpy.GetParameterAsText(0)
+        inpoints = arcpy.GetParameterAsText(1)
         out_workspace = arcpy.GetParameterAsText(2)
         outpoints = arcpy.GetParameterAsText(3)
         outsegments = arcpy.GetParameterAsText(4)
         outpolygons = arcpy.GetParameterAsText(5)
         inroads_identifier = arcpy.GetParameterAsText(6)
-        curve_ratio_txt = arcpy.GetParameterAsText(7)
+        inpoints_identifier = arcpy.GetParameterAsText(7)
+        curve_ratio_txt = arcpy.GetParameterAsText(8)
         arcpy.env.workspace = out_workspace
 
         ##################################################################################
@@ -186,7 +187,7 @@ def main():
         point_identifiers = []
         if input_points_bbox is not None:
             extents.append(input_points_bbox)
-            for point in arcpy.da.SearchCursor(inpoints, ['SHAPE@X', 'SHAPE@Y', 'OID@']):
+            for point in arcpy.da.SearchCursor(inpoints, ['SHAPE@X', 'SHAPE@Y', inpoints_identifier]):
                 point_identifiers.append(point[2])
                 pv.AddPoint([point[0], point[1]])
 
