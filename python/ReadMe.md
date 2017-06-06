@@ -6,7 +6,7 @@ This section contains a geoprocessing tool. This tool will require the deployeme
 
 For information about the voronoi solver, please refer to the Boost API: http://www.boost.org/doc/libs/1_59_0/libs/polygon/doc/voronoi_diagram.htm
 
-Here is a screeenshot of what the output look like:
+Here is a screeenshot of what the output look like. Black segments and points are the voronoi input geometries while the cells and cell's vertices are represented in blue.:
 
 ![Voronoi Problem](../ressources/VoronoiResults.PNG?raw=true "Voronoi Problem")
 
