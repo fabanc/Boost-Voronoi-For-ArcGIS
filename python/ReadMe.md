@@ -6,6 +6,10 @@ This section contains a geoprocessing tool. This tool will require the deployeme
 
 For information about the voronoi solver, please refer to the Boost API: http://www.boost.org/doc/libs/1_59_0/libs/polygon/doc/voronoi_diagram.htm
 
+Here is a screeenshot of what the output look like:
+
+![Voronoi Problem](../ressources/VoronoiResults.PNG?raw=true "Voronoi Problem")
+
 ### ArcGIS Desktop
 
 The python package used by this extensions is built on C++ code, which can be unsettling for non-programmers as it requires installing a C++ compiler ([see here for details](https://wiki.python.org/moin/WindowsCompilers))
