@@ -25,7 +25,7 @@ Since ArcGIS Desktop uses Python 2.7 and works exclusively on Windows, I have at
 
 * Type the following in a command line: ``pip install @path to .whl file`` 
 
-The name of the appropriate wheel will be pyvoronoi-1.0.3-cp27-none-win32.whl for Windows 32 bits and pyvoronoi-1.0.3-cp27-cp27m-win_amd64.whl for 64 bits.
+The name of the appropriate wheel will be pyvoronoi-1.0.5-cp27-none-win32.whl for Windows 32 bits and pyvoronoi-1.0.5-cp27-cp27m-win_amd64.whl for 64 bits.
 
 The wheels are built for 32 and 64 bits environements.
 
@@ -33,11 +33,11 @@ The wheels are built for 32 and 64 bits environements.
 
 If you already have a C++ compiler, are on a Linux OS, or are using another version than Python 2.7, you will need to install from Pypi.
 
-``pip install pyvoronoi==1.0.3``
+``pip install pyvoronoi==1.0.5``
 
 Consult the help of associated with the geoprocessing tools for more information. The pyovornoi github repository has also extensive documentation about installation. 
 
-### ArcGIS Pro 1.3 and 1.4
+### ArcGIS Pro 1.3 and above (1.4, 2.0, etc ...)
 
 ArcGIS Pro comes with conda, which means the end-user does not need to deal with all the steps for ArcGIS Desktop installation.
 
